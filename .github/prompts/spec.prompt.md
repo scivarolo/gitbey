@@ -5,7 +5,7 @@ description: 'Plan a feature'
 
 Your goal is to generate a functional spec for implementing a feature based on the provided idea.
 
-Before generating the implementation plan, be sure to review the #file:../../docs/idea.md file to understand an overview of the project.
+Before generating the implementation plan, be sure to review the file in "../../docs/idea.md" file to understand an overview of the project.
 
 RULES:
 - Keep implementations simple, do not over architect

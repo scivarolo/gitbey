@@ -5,7 +5,7 @@ description: 'Plan an implementation'
 
 Your goal is to generate an implementation plan for a specification document provided to you.
 
-Before generating the implementation plan, be sure to review the #file:../../docs/idea.md file to understand an overview of the project.
+Before generating the implementation plan, be sure to review the file in "../../docs/idea.md" to understand an overview of the project.
 
 RULES:
 - Keep implementations simple, do not over architect

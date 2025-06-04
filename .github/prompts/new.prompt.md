@@ -20,7 +20,7 @@ NEXT:
 FINALLY:
 - Once I tell you I am ready, create a plan (or update an existing plan) and use the #tool:github create issue tool to create an issue with this proposal and title: Spec.
 
-The correct repo is LadyKerr/gitbey-demo
+The correct repo is githubevents/gitbey
 
 ```
 # Project Name
@@ -37,4 +37,4 @@ The correct repo is LadyKerr/gitbey-demo
 -Provide a basic MVP scope that could be delivered quickly to validate this idea.
 ```
 
-Output your plan in the directory:/docs/idea.md
+Output your plan in the directory "../../docs/idea.md"
