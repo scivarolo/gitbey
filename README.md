@@ -6,5 +6,7 @@ Tech Stack:
 - Flutter 
 - Dart 
 - GitHub Copilot Agent Mode 
+- Copilot Coding Agent
 - GitHub Models 
 - Spotify API 
+- GitHub and Perplexity MCP Servers
