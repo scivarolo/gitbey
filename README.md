@@ -39,10 +39,10 @@ By the end of this workshop, you'll understand:
 
 Before starting, make sure you have:
 
-- [ ] **Flutter SDK** installed ([Installation Guide](docs/setup/flutter-installation.md))
+- [ ] **Flutter SDK** installed ([Installation Guide](https://docs.flutter.dev/get-started/install))
 - [ ] **Dart** (comes with Flutter)
 - [ ] **Git** for version control
-- [ ] **iOS Simulator** set up
+- [ ] **iOS Simulator** [set up](https://developer.apple.com/documentation/xcode/downloading-and-installing-additional-xcode-components)
 - [ ] **VS Code** or preferred IDE with Flutter extensions
 - [ ] **AI Assistant** (GitHub Copilot - sign up for FREE!)
 - [ ] **GitHub Account** with access to your public commits
