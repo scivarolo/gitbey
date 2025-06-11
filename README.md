@@ -51,8 +51,14 @@ Before starting, make sure you have:
 ### 🔑 API Keys Required
 - [ ] **GitHub Models API** token ([Setup Guide](docs/setup/api-keys-setup.md))
 - [ ] **Spotify Developer** credentials (optional, for future extensions)
-- [ ] **GitHub Personal Access Token** for commit access ([Guide](docs/setup/github-token-setup.md))
-- [ ] **Perplexity API Key** for AI Research ([Sign Up](https://www.perplexity.ai/))
+- [ ] **GitHub Personal Access Token** for commit access ([Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token))
+- [ ] **Perplexity API Key** for AI Research ([Sign Up](https://docs.perplexity.ai/guides/getting-started))
+
+### MCP Servers 
+
+- [ ] **Perplexity MCP Server** - For AI research and analysis ([Setup Guide](https://github.com/jsonallen/perplexity-mcp))
+- [ ] **GitHub MCP Server** - For interacting with GitHub ([Setup Guide](https://github.com/github/github-mcp-server))
+- [ ] **Setup Instructions for MCP Servers in VSCode** - [docs](https://code.visualstudio.com/docs/copilot/chat/mcp-servers).
 
 
 ## 🤝 Contributing
