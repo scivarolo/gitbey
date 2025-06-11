@@ -49,9 +49,9 @@ Before starting, make sure you have:
 - [ ] **Willingness to learn** with AI assistance - perfect for beginners!
 
 ### 🔑 API Keys Required
-- [ ] **GitHub Models API** token ([Setup Guide](docs/setup/api-keys-setup.md))
+- [ ] **GitHub Models API** token (your GitHub PAT)
 - [ ] **Spotify Developer** credentials (optional, for future extensions)
-- [ ] **GitHub Personal Access Token** for commit access ([Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token))
+- [ ] **GitHub Personal Access Token** for commit, repo, models, issues access ([Guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token))
 - [ ] **Perplexity API Key** for AI Research ([Sign Up](https://docs.perplexity.ai/guides/getting-started))
 
 ### MCP Servers 
