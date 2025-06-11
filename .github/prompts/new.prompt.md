@@ -20,7 +20,7 @@ NEXT:
 FINALLY:
 - Once I tell you I am ready, create a plan (or update an existing plan) and use the #tool:github create issue tool to create an issue with this proposal and title: Spec.
 
-The correct repo is githubevents/gitbey
+The correct repo is scivarolo/gitbey
 
 ```
 # Project Name
