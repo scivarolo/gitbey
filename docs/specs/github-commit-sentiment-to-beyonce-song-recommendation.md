@@ -37,14 +37,15 @@ overallVibe = aggregateSentiments(sentiments)
 
 ---
 
-## Step 3: Map Vibe to Beyoncé Songs
-**Objective:** Recommend 5 Beyoncé songs that match the detected vibe.
+## Step 3: Map Vibe to Beyoncé Songs (AI-powered)
+**Objective:** Recommend 5 Beyoncé songs that match the detected vibe using the GitHub Models API.
 **Steps:**
-- Define a static mapping of sentiment/vibe categories to Beyoncé songs.
-- Select 5 songs based on the overall vibe.
+- Send the detected overall vibe (and the commit messages) to the GitHub Models API.
+- Use the API to generate a list of 5 Beyoncé songs that fit the vibe.
+- Handle API errors and fall back to a static mapping if needed.
 **Pseudocode:**
 ```
-songs = getSongsForVibe(overallVibe)
+songs = getSongsForVibeAI(overallVibe, commitMessages)
 ```
 **User intervention:** None.
 
