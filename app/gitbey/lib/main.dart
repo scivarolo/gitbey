@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:sentiment_dart/sentiment_dart.dart';
 
 void main() {
   runApp(const GitBeyApp());
@@ -32,12 +33,14 @@ class _GitHubUsernameScreenState extends State<GitHubUsernameScreen> {
   bool _loading = false;
   String? _error;
   List<dynamic>? _commits;
+  String? _overallVibe;
 
   Future<void> _fetchCommits() async {
     setState(() {
       _loading = true;
       _error = null;
       _commits = null;
+      _overallVibe = null;
     });
     final username = _controller.text.trim();
     if (username.isEmpty) {
@@ -64,8 +67,28 @@ class _GitHubUsernameScreenState extends State<GitHubUsernameScreen> {
             _loading = false;
           });
         } else {
+          // Step 2: Sentiment Analysis
+          final commitMessages = commits
+              .map((c) => c['message'] as String? ?? '')
+              .toList();
+          final scores = commitMessages.map((msg) {
+            final result = Sentiment.analysis(msg, emoji: true);
+            return result.score;
+          }).toList();
+          final avgScore = scores.isEmpty
+              ? 0
+              : scores.reduce((a, b) => a + b) / scores.length;
+          String vibe;
+          if (avgScore > 1) {
+            vibe = 'Positive';
+          } else if (avgScore < -1) {
+            vibe = 'Negative';
+          } else {
+            vibe = 'Neutral';
+          }
           setState(() {
             _commits = commits.take(50).toList();
+            _overallVibe = vibe;
             _loading = false;
           });
         }
@@ -136,6 +159,13 @@ class _GitHubUsernameScreenState extends State<GitHubUsernameScreen> {
                   'Found ${_commits!.length} commits!',
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 ),
+                if (_overallVibe != null) ...[
+                  const SizedBox(height: 8),
+                  Text(
+                    'Detected vibe: $_overallVibe',
+                    style: const TextStyle(fontSize: 18),
+                  ),
+                ],
                 // For now, just show the first few commit messages
                 ..._commits!
                     .take(3)
