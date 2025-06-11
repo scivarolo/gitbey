@@ -41,13 +41,18 @@ Before starting, make sure you have:
 
 - [ ] **Flutter SDK** installed ([Installation Guide](docs/setup/flutter-installation.md))
 - [ ] **Dart** (comes with Flutter)
+- [ ] **Git** for version control
+- [ ] **iOS Simulator** set up
 - [ ] **VS Code** or preferred IDE with Flutter extensions
-- [ ] **AI Assistant** (GitHub Copilot)
+- [ ] **AI Assistant** (GitHub Copilot - sign up for FREE!)
+- [ ] **GitHub Account** with access to your public commits
 - [ ] **Willingness to learn** with AI assistance - perfect for beginners!
 
 ### 🔑 API Keys Required
 - [ ] **GitHub Models API** token ([Setup Guide](docs/setup/api-keys-setup.md))
 - [ ] **Spotify Developer** credentials (optional, for future extensions)
+- [ ] **GitHub Personal Access Token** for commit access ([Guide](docs/setup/github-token-setup.md))
+- [ ] **Perplexity API Key** for AI Research ([Sign Up](https://www.perplexity.ai/))
 
 
 ## 🤝 Contributing
